@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include frappe_login_session_defaults_popup *.css
+recursive-include frappe_login_session_defaults_popup *.csv
+recursive-include frappe_login_session_defaults_popup *.html
+recursive-include frappe_login_session_defaults_popup *.ico
+recursive-include frappe_login_session_defaults_popup *.js
+recursive-include frappe_login_session_defaults_popup *.json
+recursive-include frappe_login_session_defaults_popup *.md
+recursive-include frappe_login_session_defaults_popup *.png
+recursive-include frappe_login_session_defaults_popup *.py
+recursive-include frappe_login_session_defaults_popup *.svg
+recursive-include frappe_login_session_defaults_popup *.txt
+recursive-exclude frappe_login_session_defaults_popup *.pyc
