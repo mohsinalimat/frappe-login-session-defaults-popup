@@ -5,7 +5,6 @@ authors = [
 ]
 description = "Frappe plugin that shows the session defaults popup after login."
 keywords = ["frappe", "erpnext"]
-license_file = "license.txt"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "License :: OSI Approved :: MIT License",
