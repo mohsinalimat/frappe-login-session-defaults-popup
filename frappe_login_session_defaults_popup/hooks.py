@@ -80,8 +80,8 @@ app_include_js = [
 
 
 # login
-on_session_creation = [
-	"frappe_login_session_defaults_popup.api.session.on_create"
+on_login = [
+	"frappe_login_session_defaults_popup.override.on_login"
 ]
 
 # Permissions
