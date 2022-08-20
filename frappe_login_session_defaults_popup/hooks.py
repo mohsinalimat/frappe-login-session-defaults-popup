@@ -21,7 +21,7 @@ is_frappe_above_v13 = int(frappe_version.split('.')[0]) > 13
 app_include_js = [
     'session_defaults_popup.bundle.js'
 ] if is_frappe_above_v13 else [
-    '/assets/frappe_login_session_defaults_popup/js/session_defaults_popup.js'
+    '/assets/frappe_login_session_defaults_popup/js/session_defaults_popup.bundle.js'
 ]
 
 # include custom scss in every website theme (without file extension ".scss")
