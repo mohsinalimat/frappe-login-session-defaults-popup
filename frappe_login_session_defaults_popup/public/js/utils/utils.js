@@ -93,8 +93,12 @@ function on_event() {
     });
 }
 
-export default function start_plugin() {
+function start_plugin() {
     get_settings()
     .then(setup_socket)
     .then(on_event);
 }
+
+export {
+    start_plugin
+};
