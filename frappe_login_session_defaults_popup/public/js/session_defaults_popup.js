@@ -41,6 +41,7 @@ frappe.login_session_defaults_popup.show_popup = function() {
             var d = new frappe.ui.Dialog({
                 fields: fields,
                 title: __('Session Defaults'),
+                'static': true
             });
             d.set_primary_action(__('Save'), function() {
                 var values = d.get_values();
