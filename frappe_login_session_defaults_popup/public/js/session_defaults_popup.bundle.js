@@ -93,8 +93,8 @@ frappe.login_session_defaults_popup.on_event = function() {
     });
 };
 
-$(document).ready(function() {
+(function() {
     frappe.login_session_defaults_popup.get_settings()
     .then(frappe.login_session_defaults_popup.setup_socket)
     .then(frappe.login_session_defaults_popup.on_event);
-});
+}());
