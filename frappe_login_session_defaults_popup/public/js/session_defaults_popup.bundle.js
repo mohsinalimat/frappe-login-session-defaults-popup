@@ -2,4 +2,8 @@ import {
     start_plugin
 } from './utils/utils.js';
 
-$(document).ready(start_plugin);
+try {
+    $(document).ready(start_plugin);
+} catch(e) {
+    start_plugin();
+}
