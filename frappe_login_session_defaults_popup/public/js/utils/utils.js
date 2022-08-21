@@ -50,9 +50,18 @@ function show_popup() {
                     return;
                 }
                 // if default is not set for a particular field in prompt
+                let count = 0;
                 fields.forEach(function(d) {
                     if (!values[d.fieldname]) values[d.fieldname] = "";
+                    else count++;
                 });
+                if (!count) {
+                    frappe.show_alert({
+                        'message': __('Please fill the form of Session Defaults.'),
+                        'indicator': 'orange'
+                    });
+                    return;
+                }
                 frappe.call({
                     method: 'frappe.core.doctype.session_default_settings.session_default_settings.set_session_default_values',
                     args: {
